@@ -1,5 +1,27 @@
 # AscensionPatchNotes
 
+## Version 0.0.8 - 2026-08-18
+
+### 🔥 New Features
+* **Main Menu Redesign:** Complete visual and functional overhaul of the main menu interface, featuring terminal-style UI animations, updated background scene, and a direct external community link panel.
+* **Elevator Level Transitions:** Implemented active elevator systems for level entry and floor transitions, complete with dynamic floor displays, window motion scrollers, screen shake effects, and contextual keycard audio cues.
+* **Dynamic Enemy Alert System:** Enemies now react to weapon fire noise, direct bullet impacts, and door breaches.
+
+### ⚔️ Balance & Gameplay
+* **Increased Threat Density:** Overall enemy spawn rates across floors have been increased.
+* **Death Mechanics Overhaul:** Death now triggers a gradual time-deceleration phase, causing all equipped weapons and inventory items to scatter into the environment upon player elimination.
+* **Movement Physics Refinement:** Implemented smooth wall-collision slide handling to eliminate snagging on level geometry. Improved crouch-slide friction, slope traversal, and movement responsiveness.
+* **Breach Damage Correction:** Resolved an issue where breaching doors failed to inflict physical damage on nearby enemies.
+
+### 🔧 Fixes & Tech
+* **Interaction HUD Clean-up:** Fixed stale prompt caching where unlocked doors would continue displaying as locked if targeted during state changes. Expanded interaction detection ranges and fixed close-range interaction blocking. Fixed issue with secondary weapon input hint not displaying the correct key.
+* **Audio Fixes & Additions:** Added new firing sound effects for the P-9 Rook pistol, corrected 3D spatial sound routing errors, balanced kill notification volumes, and ensured elevator sounds correctly mute while paused.
+* **Interface & Menu Fixes:** Fixed mouse cursor visibility issues and blocked pause inputs when transitioning from the death screen back to the main menu. Secondary weapon indices now correctly render on the player HUD.
+* **Environment & Generation:** Reduced facade clutter during procedural layout generation.
+* **Performance & Weapon Systems:** Stripped out legacy attachment code, optimized weapon state transitions, and fixed animation unholster mismatches. Major bug fixing and optimization among many core systems to improve overall stability.
+
+---
+
 ## Version 0.0.7 - 2026-06-25
 
 ### 🔥 New Features
